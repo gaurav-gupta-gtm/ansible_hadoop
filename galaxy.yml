@@ -1,0 +1,18 @@
+---
+namespace: "gaurav-gupta-gtm"
+name: "ansible_hadoop"
+version: "1.0.0"
+readme: "README.md"
+authors:
+  - "Gaurav Gupta"
+description: "Setup Hadoop Cluster Using Ansible"
+tags:
+  - linux
+  - hadoop
+  - bigdata
+  - cluster
+  - collection
+repository: "https://github.com/gaurav-gupta-gtm/ansible_hadoop"
+homepage: "https://github.com/gaurav-gupta-gtm/ansible_hadoop"
+documentation: "https://github.com/gaurav-gupta-gtm/ansible_hadoop"
+issues: "https://github.com/gaurav-gupta-gtm/ansible_hadoop/issues"
