@@ -51,5 +51,5 @@ ansible-galaxy collection install gaurav-gupta-gtm.ansible_hadoop
 ### Running role:
 
 ```
-ansible all -m include_role -a 'name=hodoop-config'
+ansible all -m include_role -a 'name=hadoop-config'
 ```
