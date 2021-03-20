@@ -12,6 +12,8 @@ Tested on:
 - Amazon Linux 2
 
 Prerequisite:
+-------------
+
 - Make sure you have two groups in inventory file: master and slave
 
 Example
