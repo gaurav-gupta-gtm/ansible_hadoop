@@ -1,0 +1,18 @@
+- name: Create directory for datanode
+  file:
+     path: /{{ data_dir }}
+     state: directory
+     recurse: true
+  register: output
+- name: Copy Config file
+  template:
+    src: templates/hdfs-site.xml.j2
+    dest: /etc/hadoop/hdfs-site.xml
+- name: Copy core-aite file
+  template:
+    src: templates/core-site.xml.j2
+    dest: /etc/hadoop/core-site.xml
+- name: debug the output
+  command: hadoop-daemon.sh start datanode
+  when:  output.changed == true
+

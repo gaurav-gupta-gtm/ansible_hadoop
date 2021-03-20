@@ -1,0 +1,21 @@
+- name: Create directory for namenode
+  file:
+     path: /{{ dir_name }}
+     state: directory
+     recurse: true
+  register: output
+- name: Copy hdfs-site file
+  template:
+    src: templates/hdfs-site.xml.j2
+    dest: /etc/hadoop/hdfs-site.xml
+- name: Copy core-site file
+  template:
+    src: templates/core-site.xml.j2
+    dest: /etc/hadoop/core-site.xml
+- name: Format the directory
+  command: hadoop namenode -format -force
+  when:  output.changed == true
+  register: svc
+- name: Start the service
+  command: hadoop-daemon.sh start namenode
+  when: svc.changed == true
