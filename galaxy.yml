@@ -1,5 +1,4 @@
----
-namespace: "gaurav-gupta-gtm"
+namespace: "gaurav_gupta_gtm"
 name: "ansible_hadoop"
 version: "1.0.0"
 readme: "README.md"

@@ -31,25 +31,23 @@ ansible-galaxy collection install gaurav-gupta-gtm.ansible_hadoop
 ```yaml
 - name: Install Necessary Software
   hosts: all
-  become: true
   roles:
-  -  role: hadoop-config
+  -  role: hadoop_config
 
 - name: Setup Master Node
   hosts: master
-  become: true
   roles:
-  - role: master-setup
+  - role: master_setup
 
 - name: Setup Slave  Node
   hosts: slave
   become: true
   roles:
-  - role: slave-setup
+  - role: slave_setup
 ```
 
 ### Running role:
 
 ```
-ansible all -m include_role -a 'name=hadoop-config'
+ansible all -m include_role -a 'name=hadoop_config'
 ```

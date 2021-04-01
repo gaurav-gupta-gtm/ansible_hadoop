@@ -1,0 +1,15 @@
+- name: Install Necessary Software
+  hosts: all
+  roles:
+  -  role: hadoop_config
+
+- name: Setup Master Node
+  hosts: master
+  roles:
+  - role: master_setup
+
+- name: Setup Slave  Node
+  hosts: slave
+  roles:
+  - role: slave_setup
+
