@@ -55,6 +55,7 @@ ansible all -m include_role -a 'name=hadoop_config'
 More Details:
 -------------
 
-[Click here for know more how to use it](https://techq.medium.com/setup-a-multi-node-hadoop-cluster-using-ansible-by-gaurav-gupta-7dc88d53f26f)
+[Click here for know more how to use it](https://techq.medium.com/setup-a-multi-node-hadoop-cluster-using-ansible-by-gaurav-gupta-7dc88d53f26f "Configure Hadoop-Custer")
+
 [Ansible-Galaxy URL](https://galaxy.ansible.com/gaurav_gupta_gtm/ansible_hadoop)
 
